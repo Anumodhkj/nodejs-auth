@@ -25,5 +25,4 @@ app.use('/api/posts', postRout);
 const port=process.env.PORT || 5000;
 app.listen(port,()=>{
  console.log("listening to 5000 ");
- console.log("Server Started Running ");
 });
