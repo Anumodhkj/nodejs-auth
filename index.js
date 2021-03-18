@@ -19,4 +19,11 @@ const postRout=require('./Router/Post');
 app.use('/api/user', authRout);
 app.use('/api/posts', postRout);
 
-app.listen(5000,()=>console.log("Server Started Running "));
+// app.listen(5000,()=>console.log("Server Started Running "));
+
+// app.listen(5000);
+const port=process.env.PORT || 5000;
+app.listen(port,()=>{
+ console.log("listening to 5000 ");
+ console.log("Server Started Running ");
+});
